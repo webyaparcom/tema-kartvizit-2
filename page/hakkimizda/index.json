@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Hakkımda",
+    "en": "About",
+    "ar": "عنّي"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 0,
+  "icon": "person",
+  "desing": {
+    "header": [],
+    "body": [
+      "rsay2c",
+      "il8k6o"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "On iki yıl, altı kart ve birlikte çalıştığım ekipler (kurgusal).",
+    "en": "Twelve years, six cards and the teams I have worked with (fictional).",
+    "ar": "اثنا عشر عامًا وست بطاقات والفرق التي عملت معها (افتراضي)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Hakkımda",
+    "en": "About",
+    "ar": "عنّي"
+  },
+  "keyword": {
+    "tr": "ürün tasarımcısı, özgeçmiş",
+    "en": "product designer, resume",
+    "ar": "مصمم منتجات، سيرة ذاتية"
+  },
+  "text": {},
+  "update": "2026-11-16T22:47:33.075Z",
+  "date": "2026-10-30"
+}

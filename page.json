@@ -1,0 +1,63 @@
+{
+  "name": "Sayfalar",
+  "path": "page",
+  "desc": [],
+  "data": [
+    {
+      "name": {
+        "tr": "Hakkımda",
+        "en": "About",
+        "ar": "عنّي"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 0,
+      "icon": "person",
+      "desing": {
+        "header": [],
+        "body": [
+          "rsay2c",
+          "il8k6o"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "On iki yıl, altı kart ve birlikte çalıştığım ekipler (kurgusal).",
+        "en": "Twelve years, six cards and the teams I have worked with (fictional).",
+        "ar": "اثنا عشر عامًا وست بطاقات والفرق التي عملت معها (افتراضي)."
+      }
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "تواصل"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "rty6rb",
+          "s0sg02"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Görüşme ayarlayın ya da yazın.",
+        "en": "Set up a call or write.",
+        "ar": "رتّب لقاءً أو اكتب."
+      }
+    }
+  ]
+}
