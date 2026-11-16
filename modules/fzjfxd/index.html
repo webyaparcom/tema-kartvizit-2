@@ -1,0 +1,142 @@
+<footer class="modulex-alt-zarf{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-alt-zarf-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</footer>
+
+<style>
+  /* alt-zarf — İletişim bir mektup nesnesinde: zarf katmanları (kapak, cep, mühür) CSS clip-path ile çizilir, metin hiçbir zaman cebin altında kalmaz; kopyala düğmeleri JS yoksa gizli — kartvizit, davetiye, butik ve kişisel hizmet siteleri için samimi kapanış. */
+  .modulex-alt-zarf { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-alt-zarf *, .modulex-alt-zarf *::before, .modulex-alt-zarf *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-alt-zarf :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-alt-zarf :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-alt-zarf :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-alt-zarf :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-alt-zarf img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-alt-zarf) img { height: auto; }
+  .modulex-alt-zarf [hidden] { display: none !important; }
+  .modulex-alt-zarf :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-alt-zarf :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-alt-zarf-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-alt-zarf-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-alt-zarf--bassiz .modulex-alt-zarf-bas { display: none; }
+  .modulex-alt-zarf-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-alt-zarf-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-alt-zarf-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-alt-zarf-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-alt-zarf-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-alt-zarf-dugme:hover { transform: translateY(-2px); }
+  .modulex-alt-zarf-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-alt-zarf-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-alt-zarf-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-alt-zarf-bag { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+  .modulex-alt-zarf-bag:hover { color: --accentInk--; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-alt-zarf-bag[aria-current="page"] { color: --accentInk--; font-weight: 700; }
+  .modulex-alt-zarf-logo { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+  .modulex-alt-zarf-logo img { width: auto; max-height: --logoH--; }
+  .modulex-alt-zarf-ad { font-family: var(--mx-font-heading, inherit); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .modulex-alt-zarf-bbaslik { margin-block-end: 14px; color: --accentInk--; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-alt-zarf-sayfalar, .modulex-alt-zarf-baglantilar, .modulex-alt-zarf-iletisim, .modulex-alt-zarf-yasal { display: grid; gap: 9px; }
+  .modulex-alt-zarf-il { display: flex; align-items: flex-start; gap: 10px; }
+  .modulex-alt-zarf-il-ic { display: grid; gap: 2px; }
+  .modulex-alt-zarf-il-etiket { color: --muted--; font-size: 0.8rem; }
+  .modulex-alt-zarf-il-ikon { flex: none; color: --accentInk--; font-size: 20px; }
+  .modulex-alt-zarf-saatler { display: grid; gap: 6px; }
+  .modulex-alt-zarf-saat { display: flex; justify-content: space-between; gap: 16px; }
+  .modulex-alt-zarf-saat dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .modulex-alt-zarf-sosyal { display: flex; flex-wrap: wrap; gap: 10px; }
+  .modulex-alt-zarf-sosyal-a { display: inline-grid; place-items: center; width: 42px; height: 42px; border: 1px solid --cizgi--; border-radius: 50%; color: inherit; font-size: 18px; transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease; }
+  .modulex-alt-zarf-sosyal-a:hover { border-color: --accent--; background: --accent--; color: --accentText--; transform: translateY(-2px); }
+  .modulex-alt-zarf-hakkinda { max-width: 46ch; color: --muted--; }
+  .modulex-alt-zarf-telif { display: flex; flex-wrap: wrap; gap: 4px 14px; color: --muted--; font-size: 0.9rem; }
+  .modulex-alt-zarf-dil:empty { display: none; }
+  .modulex-alt-zarf-yukari { display: inline-grid; place-items: center; flex: none; width: 46px; height: 46px; border-radius: 50%; background: --accent--; color: --accentText--; text-decoration: none; transition: transform 0.25s ease; }
+  .modulex-alt-zarf-yukari:hover { transform: translateY(-3px); }
+  .modulex-alt-zarf-bulten { display: grid; gap: 8px; }
+  .modulex-alt-zarf-nl-etiket { font-size: 0.9rem; font-weight: 700; }
+  .modulex-alt-zarf-nl-satir { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-alt-zarf-nl-girdi { flex: 1 1 200px; min-width: 0; min-height: 48px; padding: 10px 18px; border: 1px solid --cizgi--; border-radius: 999px; background: --bg--; color: --text--; font: inherit; }
+  .modulex-alt-zarf-nl-dugme { display: inline-flex; align-items: center; gap: 6px; min-height: 48px; padding: 10px 22px; border: 0; border-radius: 999px; background: --accent--; color: --accentText--; font: inherit; font-weight: 700; transition: transform 0.2s ease; }
+  .modulex-alt-zarf-nl-dugme:hover { transform: translateY(-2px); }
+  .modulex-alt-zarf-nl-dugme .material-symbols-outlined { font-size: 18px; }
+  .modulex-alt-zarf-nl-durum:empty { display: none; }
+  .modulex-alt-zarf-nl-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .modulex-alt-zarf-nl-metin { color: --muted--; }
+
+  .modulex-alt-zarf-zf-masa { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+  .modulex-alt-zarf-zf-masa--tek { grid-template-columns: minmax(0, 1fr); }
+  .modulex-alt-zarf-zf-zarf { position: relative; display: grid; padding-block-start: 12px; }
+  .modulex-alt-zarf-zf-zarf::before { content: ""; position: absolute; inset-block: 108px 0; inset-inline: 0; border-radius: 10px; background: color-mix(in srgb, --accent-- 22%, --kartBg--); }
+  .modulex-alt-zarf-zf-kapak { position: absolute; inset-block-start: 36px; inset-inline: 0; height: 74px; background: color-mix(in srgb, --accent-- 32%, --kartBg--); clip-path: polygon(0 100%, 50% 0, 100% 100%); transform-origin: 50% 100%; transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .modulex-alt-zarf-zf-mektup { position: relative; z-index: 1; display: grid; gap: 14px; margin-inline: 7%; padding: 24px 24px 88px; border-radius: 6px; background: --kartBg--; box-shadow: 0 12px 30px -22px color-mix(in srgb, --text-- 55%, transparent); transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .modulex-alt-zarf-zf-zarf:is(:hover, :focus-within) .modulex-alt-zarf-zf-mektup { transform: translateY(-16px); }
+  .modulex-alt-zarf-zf-zarf:is(:hover, :focus-within) .modulex-alt-zarf-zf-kapak { transform: scaleY(1.12); }
+  .modulex-alt-zarf-zf-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.3rem, 2.4vw, 1.8rem); font-weight: 800; }
+  .modulex-alt-zarf-zf-liste { display: grid; gap: 4px; }
+  .modulex-alt-zarf-zf-satir { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 2px 12px; padding-block: 10px; border-block-end: 1px dashed --cizgi--; }
+  .modulex-alt-zarf-zf-etk { display: inline-flex; align-items: center; gap: 6px; grid-column: 1 / -1; color: --muted--; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  .modulex-alt-zarf-zf-ik { color: --accentInk--; font-size: 16px; }
+  .modulex-alt-zarf-zf-deger { color: inherit; font-size: clamp(1rem, 1.8vw, 1.2rem); font-weight: 700; text-decoration: none; overflow-wrap: anywhere; transition: color 0.2s ease; }
+  a.modulex-alt-zarf-zf-deger:hover { color: --accentInk--; }
+  .modulex-alt-zarf-zf-kopya { display: inline-flex; align-items: center; gap: 4px; min-height: 36px; padding: 6px 12px; border: 1px solid --cizgi--; border-radius: 8px; background: transparent; color: --text--; font: inherit; font-size: 0.78rem; font-weight: 700; transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease; }
+  .modulex-alt-zarf-zf-kopya .material-symbols-outlined { font-size: 16px; }
+  .modulex-alt-zarf-zf-kopya:hover { border-color: --accent--; }
+  .modulex-alt-zarf-zf-kopya.modulex-alt-zarf--kopyalandi { border-color: --accent--; background-color: --accent--; color: --accentText--; }
+  .modulex-alt-zarf:not(.modulex-alt-zarf--kjs) .modulex-alt-zarf-zf-kopya { display: none; }
+  .modulex-alt-zarf-zf-cep { position: relative; z-index: 2; height: 150px; margin-block-start: -84px; border-end-start-radius: 10px; border-end-end-radius: 10px; background: color-mix(in srgb, --accent-- 14%, --kartBg--); clip-path: polygon(0 0, 50% 48%, 100% 0, 100% 100%, 0 100%); }
+  .modulex-alt-zarf-zf-muhur { position: absolute; z-index: 3; inset-block-end: 56px; inset-inline: 0; width: 44px; height: 44px; margin-inline: auto; border-radius: 50%; background: radial-gradient(circle at 38% 34%, color-mix(in srgb, --accent-- 55%, --bg--) 0 20%, --accent-- 48%, color-mix(in srgb, --accent-- 70%, --text--)); box-shadow: 0 6px 10px -4px color-mix(in srgb, --text-- 60%, transparent); transition: transform 0.4s ease; }
+  .modulex-alt-zarf-zf-zarf:hover .modulex-alt-zarf-zf-muhur { transform: rotate(-20deg) scale(1.08); }
+  .modulex-alt-zarf-zf-yan { display: grid; align-content: start; gap: 26px; }
+  .modulex-alt-zarf-zf-marka { display: grid; gap: 14px; }
+  .modulex-alt-zarf-zf-ikili { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 22px; }
+  .modulex-alt-zarf-zf-dip { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-block-start: clamp(32px, 5vw, 48px); padding-block-start: 20px; border-block-start: 1px solid --cizgi--; }
+  .modulex-alt-zarf-zf-dip .modulex-alt-zarf-telif { margin-inline-end: auto; }
+  .modulex-alt-zarf-zf-yasal { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.9rem; }
+  @media (max-width: 1024px) {
+    .modulex-alt-zarf-zf-masa { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .modulex-alt-zarf-zf-mektup { margin-inline: 4%; padding-inline: 16px; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-alt-zarf :is(.modulex-alt-zarf-baslik, .modulex-alt-zarf-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-alt-zarf-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-alt-zarf { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-alt-zarf *, .modulex-alt-zarf *::before, .modulex-alt-zarf *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-alt-zarf";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const kopyala = (s, P) => {
+        if (!navigator.clipboard || !navigator.clipboard.writeText) return;
+        s.classList.add(P + "--kjs");
+        s.querySelectorAll("[data-kopyala]").forEach((b) => {
+          const yazi = b.querySelector("." + P + "-kyazi");
+          const ilk = yazi ? yazi.textContent : "";
+          b.addEventListener("click", () => {
+            const bitti = () => {
+              b.classList.add(P + "--kopyalandi");
+              if (yazi) yazi.textContent = b.dataset.tamam || ilk;
+              setTimeout(() => { b.classList.remove(P + "--kopyalandi"); if (yazi) yazi.textContent = ilk; }, 2000);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(b.dataset.kopyala).then(bitti, () => {});
+          });
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      kopyala(s, P, az);
+    });
+  })();
+</script>

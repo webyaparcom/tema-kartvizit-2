@@ -1,0 +1,55 @@
+{
+  "name": "Randevu Görüşme Biçimi — kişi profili, yüz yüze/görüntülü seçimi ve yerel saat",
+  "description": "Tek kart iki panel: solda kişi profili (fotoğraf ya da baş harf, ad, unvan, başlık ve açıklama), saat ikonlu görüşme türü/süre satırları, görüşme biçimi bölmeli düğmesi (yüz yüze · görüntülü · telefon; seçilenin notu görünür) ve işletme saat dilimi rozeti. Sağda gün şeridi, liste hâlinde saat düğmeleri, seçilen saatin ziyaretçinin yerel saat dilimindeki karşılığı, ad, e-posta, telefon, not, KVKK ve gönder. JS yokken tüm notlar görünür, tarih yerel alan. randevu-kanal-sec gönderim kanalını (WhatsApp/e-posta) seçtirir, randevu-uzman-kart uzman ızgarası kurar; bu modül tek kişinin takvim sayfasıdır: görüşmenin BİÇİMİNİ (yüz yüze/görüntülü/telefon) sorar, biçime bağlı notu gösterir ve seçilen saati ziyaretçinin saat dilimine çevirir (gorusme parçası) — uzaktan/uluslararası görüşme iskeleti. Sunucusuz gönderim (formAction JSON POST › WhatsApp › .ics › mailto), kapalı gün denetimi, KVKK onayı. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Gönderim yolu yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "video_chat",
+  "category": "randevu",
+  "subCategory": "meeting-format",
+  "tags": [
+    "randevu",
+    "meeting",
+    "format",
+    "timezone",
+    "profile",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1160px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bicimler": [],
+    "bicimAd": "",
+    "saatDilimi": "",
+    "yerelAd": "",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing",
+    "alanlar": {
+      "ad": "hizmet adı (dil sözlüğü, zorunlu) — eski `services[].name`",
+      "sure": "dakika — eski `duration`",
+      "fiyat": "sayı (sayfa diliyle biçimlenir) — eski `price`",
+      "ikon": "Material Symbols adı",
+      "metin": "kısa açıklama (dil sözlüğü)",
+      "img": "görsel (destekleyen yerleşimde)"
+    }
+  }
+}

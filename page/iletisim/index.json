@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "İletişim",
+    "en": "Contact",
+    "ar": "تواصل"
+  },
+  "status": "play",
+  "category": "",
+  "id": "iletisim",
+  "url": "",
+  "path": "iletisim",
+  "index": 1,
+  "icon": "call",
+  "desing": {
+    "header": [],
+    "body": [
+      "rty6rb",
+      "s0sg02"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Görüşme ayarlayın ya da yazın.",
+    "en": "Set up a call or write.",
+    "ar": "رتّب لقاءً أو اكتب."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "İletişim",
+    "en": "Contact",
+    "ar": "تواصل"
+  },
+  "keyword": {
+    "tr": "iletişim",
+    "en": "contact",
+    "ar": "اتصال"
+  },
+  "text": {},
+  "update": "2026-11-16T22:47:33.083Z",
+  "date": "2026-10-30"
+}

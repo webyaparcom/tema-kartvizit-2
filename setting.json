@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Emre Sayın’ın kişisel kartvizit sitesi: ürün tasarımı, arayüz sadeleştirme ve tasarım mentorluğu. Kurgusal demo; görseller temsilîdir.",
+    "en": "The personal business card site of Emre Sayin: product design, interface simplification and design mentoring. Fictional demo; images are representative.",
+    "ar": "موقع البطاقة الشخصية لإمره سايين: تصميم المنتجات وتبسيط الواجهات والإرشاد في التصميم. عرض تجريبي افتراضي والصور تمثيلية."
+  },
+  "keyword": {
+    "tr": "kişisel kartvizit, ürün tasarımcısı, arayüz tasarımı, tasarım mentorluğu",
+    "en": "personal business card, product designer, interface design, design mentoring",
+    "ar": "بطاقة شخصية، مصمم منتجات، تصميم واجهات، إرشاد في التصميم"
+  },
+  "category": "Kurumsal",
+  "name": "Emre Sayın",
+  "domain": "kartvizit-2.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "source-sans-3",
+    "heading": "barlow-condensed",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#0F7A74",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "4px",
+    "--mx-radius-md": "6px",
+    "--mx-radius-lg": "8px",
+    "--mx-radius-xl": "11px"
+  },
+  "icon": "icon.png"
+}
