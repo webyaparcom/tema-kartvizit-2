@@ -3,17 +3,23 @@
   "name": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "description": {
     "tr": "Misyonumuz",
     "en": "Our mission",
-    "ar": "مهمتنا"
+    "ar": "مهمتنا",
+    "de": "Unsere Mission",
+    "ru": "Наша миссия"
   },
   "keyword": {
     "tr": "Misyon",
     "en": "mission, our mission, corporate responsibility",
-    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية"
+    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "path": "misyon",
   "icon": "flag",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Misyonumuz</h2>\n<p>Karmaşık ekranları sade, anlaşılır ve herkesin kullanabileceği arayüzlere dönüştürmek.</p>",
     "en": "<h2>Our mission</h2>\n<p>To turn complex screens into simple, clear interfaces anyone can use.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>تحويل الشاشات المعقدة إلى واجهات بسيطة وواضحة يستطيع الجميع استخدامها.</p>"
+    "ar": "<h2>مهمتنا</h2>\n<p>تحويل الشاشات المعقدة إلى واجهات بسيطة وواضحة يستطيع الجميع استخدامها.</p>",
+    "de": "<h2>Unsere Mission</h2>\n<p>Komplizierte Bildschirme in schlichte, verständliche Oberflächen zu verwandeln, die jeder nutzen kann.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Превращать сложные экраны в простые, понятные интерфейсы, доступные каждому.</p>"
   },
   "title": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "date": "2026-11-16T22:47:32.699Z",
   "update": "2026-11-16T22:47:33.102Z",

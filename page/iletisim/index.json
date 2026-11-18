@@ -2,7 +2,9 @@
   "name": {
     "tr": "İletişim",
     "en": "Contact",
-    "ar": "تواصل"
+    "ar": "تواصل",
+    "de": "Kontakt",
+    "ru": "Контакты"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Görüşme ayarlayın ya da yazın.",
     "en": "Set up a call or write.",
-    "ar": "رتّب لقاءً أو اكتب."
+    "ar": "رتّب لقاءً أو اكتب.",
+    "de": "Termin vereinbaren oder schreiben.",
+    "ru": "Запишитесь на звонок или напишите."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "İletişim",
     "en": "Contact",
-    "ar": "تواصل"
+    "ar": "تواصل",
+    "de": "Kontakt",
+    "ru": "Контакты"
   },
   "keyword": {
     "tr": "iletişim",
     "en": "contact",
-    "ar": "اتصال"
+    "ar": "اتصال",
+    "de": "Kontakt",
+    "ru": "контакты"
   },
   "text": {},
   "update": "2026-11-16T22:47:33.083Z",

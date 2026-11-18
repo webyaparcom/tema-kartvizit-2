@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>Her işte erişilebilirlik denetimi, yazılı karar notu ve teslim sonrası bir aylık soru-yanıt.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>An accessibility check, written decision notes and a month of Q&A after handover on every project.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>فحص لإمكانية الوصول وملاحظات قرارات مكتوبة وشهر من الأسئلة والأجوبة بعد التسليم في كل مشروع.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>فحص لإمكانية الوصول وملاحظات قرارات مكتوبة وشهر من الأسئلة والأجوبة بعد التسليم في كل مشروع.</p>",
+    "de": "<h2>Unsere Qualitätspolitik</h2>\n<p>Bei jeder Arbeit eine Barrierefreiheitsprüfung, eine schriftliche Entscheidungsnotiz und einen Monat Fragen und Antworten nach der Übergabe.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>В каждой работе — проверка доступности, письменная заметка о принятых решениях и месяц вопросов и ответов после сдачи.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T22:47:32.699Z",
   "update": "2026-11-16T22:47:33.110Z",

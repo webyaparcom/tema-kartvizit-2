@@ -4,12 +4,16 @@
   "description": {
     "tr": "Emre Sayın’ın kişisel kartvizit sitesi: ürün tasarımı, arayüz sadeleştirme ve tasarım mentorluğu. Kurgusal demo; görseller temsilîdir.",
     "en": "The personal business card site of Emre Sayin: product design, interface simplification and design mentoring. Fictional demo; images are representative.",
-    "ar": "موقع البطاقة الشخصية لإمره سايين: تصميم المنتجات وتبسيط الواجهات والإرشاد في التصميم. عرض تجريبي افتراضي والصور تمثيلية."
+    "ar": "موقع البطاقة الشخصية لإمره سايين: تصميم المنتجات وتبسيط الواجهات والإرشاد في التصميم. عرض تجريبي افتراضي والصور تمثيلية.",
+    "de": "Persönliche Visitenkarten-Website von Emre Sayın: Produktdesign, Interface-Vereinfachung und Design-Mentoring. Fiktive Demo; Bilder sind repräsentativ.",
+    "ru": "Личный сайт-визитка Эмре Сайына: продуктовый дизайн, упрощение интерфейсов и менторинг по дизайну. Фиктивная демо-версия; изображения носят иллюстративный характер."
   },
   "keyword": {
     "tr": "kişisel kartvizit, ürün tasarımcısı, arayüz tasarımı, tasarım mentorluğu",
     "en": "personal business card, product designer, interface design, design mentoring",
-    "ar": "بطاقة شخصية، مصمم منتجات، تصميم واجهات، إرشاد في التصميم"
+    "ar": "بطاقة شخصية، مصمم منتجات، تصميم واجهات، إرشاد في التصميم",
+    "de": "persönliche Visitenkarte, Produktdesigner, Interface-Design, Design-Mentoring",
+    "ru": "личная визитка, дизайнер продуктов, дизайн интерфейсов, наставничество в дизайне"
   },
   "category": "Kurumsal",
   "name": "Emre Sayın",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

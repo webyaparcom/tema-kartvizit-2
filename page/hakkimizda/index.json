@@ -2,7 +2,9 @@
   "name": {
     "tr": "Hakkımda",
     "en": "About",
-    "ar": "عنّي"
+    "ar": "عنّي",
+    "de": "Über mich",
+    "ru": "Обо мне"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "On iki yıl, altı kart ve birlikte çalıştığım ekipler (kurgusal).",
     "en": "Twelve years, six cards and the teams I have worked with (fictional).",
-    "ar": "اثنا عشر عامًا وست بطاقات والفرق التي عملت معها (افتراضي)."
+    "ar": "اثنا عشر عامًا وست بطاقات والفرق التي عملت معها (افتراضي).",
+    "de": "Zwölf Jahre, sechs Karten und die Teams, mit denen ich gearbeitet habe (fiktiv).",
+    "ru": "Двенадцать лет, шесть карточек и команды, с которыми я работал(а) (вымышленно)."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Hakkımda",
     "en": "About",
-    "ar": "عنّي"
+    "ar": "عنّي",
+    "de": "Über mich",
+    "ru": "Обо мне"
   },
   "keyword": {
     "tr": "ürün tasarımcısı, özgeçmiş",
     "en": "product designer, resume",
-    "ar": "مصمم منتجات، سيرة ذاتية"
+    "ar": "مصمم منتجات، سيرة ذاتية",
+    "de": "Produktdesigner, Lebenslauf",
+    "ru": "продуктовый дизайнер, резюме"
   },
   "text": {},
   "update": "2026-11-16T22:47:33.075Z",
