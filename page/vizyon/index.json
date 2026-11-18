@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Küçük ekiplerin tasarım kararlarını kendi başına verebildiği bir çalışma kültürüne katkı sunmak (kurgusal hedef).</p>",
     "en": "<h2>Our vision</h2>\n<p>To help build a culture where small teams can make design decisions on their own (fictional goal).</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>المساهمة في ثقافة عمل تستطيع فيها الفرق الصغيرة اتخاذ قرارات التصميم بنفسها (هدف افتراضي).</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>المساهمة في ثقافة عمل تستطيع فيها الفرق الصغيرة اتخاذ قرارات التصميم بنفسها (هدف افتراضي).</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Eine Arbeitskultur zu fördern, in der kleine Teams eigenständig Designentscheidungen treffen können (fiktives Ziel).</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Содействовать формированию рабочей культуры, в которой небольшие команды могут самостоятельно принимать дизайнерские решения (вымышленная цель).</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T22:47:32.699Z",
   "update": "2026-11-16T22:47:33.106Z",

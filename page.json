@@ -7,7 +7,9 @@
       "name": {
         "tr": "Hakkımda",
         "en": "About",
-        "ar": "عنّي"
+        "ar": "عنّي",
+        "de": "Über mich",
+        "ru": "Обо мне"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -28,14 +30,18 @@
       "description": {
         "tr": "On iki yıl, altı kart ve birlikte çalıştığım ekipler (kurgusal).",
         "en": "Twelve years, six cards and the teams I have worked with (fictional).",
-        "ar": "اثنا عشر عامًا وست بطاقات والفرق التي عملت معها (افتراضي)."
+        "ar": "اثنا عشر عامًا وست بطاقات والفرق التي عملت معها (افتراضي).",
+        "de": "Zwölf Jahre, sechs Karten und die Teams, mit denen ich gearbeitet habe (fiktiv).",
+        "ru": "Двенадцать лет, шесть карточек и команды, с которыми я работал(а) (вымышленно)."
       }
     },
     {
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "تواصل"
+        "ar": "تواصل",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -56,7 +62,9 @@
       "description": {
         "tr": "Görüşme ayarlayın ya da yazın.",
         "en": "Set up a call or write.",
-        "ar": "رتّب لقاءً أو اكتب."
+        "ar": "رتّب لقاءً أو اكتب.",
+        "de": "Termin vereinbaren oder schreiben.",
+        "ru": "Запишитесь на звонок или напишите."
       }
     }
   ]
